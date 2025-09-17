@@ -1,0 +1,15 @@
+name: FIRST
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  call_second_workflow:
+    name: Call second workflow
+    uses: rafalkkk/pub2/.github/workflows/second.yml@v0.1.1
+    with:
+      message: hello
+    secrets: inherit
+    permissions:
+      actions: read
+      contents: read
