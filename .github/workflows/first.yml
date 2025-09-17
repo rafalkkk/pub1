@@ -6,7 +6,7 @@ on:
 jobs:
   call_second_workflow:
     name: Call second workflow
-    uses: rafalkkk/pub2/.github/workflows/second.yml@v0.1.1
+    uses: rafalkkk/pub2/.github/workflows/second.yml@main
     with:
       message: hello
     secrets: inherit
